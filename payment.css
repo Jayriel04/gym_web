@@ -1,0 +1,38 @@
+#myTabs {
+  margin-bottom: 5px;
+  gap: 10rem;
+}
+
+.container-receipt {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.receiptItem {
+  margin-bottom: 10px;
+}
+
+.receiptLabel {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.receiptValue {
+  font-weight: normal;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto 0;
+}

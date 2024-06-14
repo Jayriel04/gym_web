@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gymnast</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon-->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!--Customized Bootstrap Stylesheet -->
+    <link href="../front-end/lib/bootsrtap/css/style.min.css" rel="stylesheet">
+
+    <!--css-->
+    <link rel="stylesheet" href="../front-end/scripts/css/payment.css">
+</head>
+
+<body class="bg-white">
+    <div class="container mt-6">
+        <ul class="nav nav-tabs justify-content-center" id="myTabs">
+            <li class="nav-item">
+              <a class="nav-link " href="#">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active"  href="#">Offer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Payment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Receipt</a>
+            </li>
+        </ul>
+        
+        <!--selecting membership types-->
+<div class="container">
+    <div class="container-fluid my-5">
+        <div class="row">
+            <div class="col-lg-4 p-0">
+                <form action="../back-end/php/store-data.php" method="post">
+                    <div class="d-flex align-items-center bg-secondary text-white px-5" style="min-height: 300px;">
+                        <i class="flaticon-training display-3 text-primary mr-3"></i>
+                        <div class="membership-container">
+                            <h3 class="text-white mb-3">Basic Membership</h3>
+                            <p>Access to gym facilities</p>
+                            <p>Price: ₱250/month</p>
+                            <div class="select-button">
+                                <input type="hidden" name="membershipPrice" value="₱250">
+                                <input type="hidden" name="membershipType" value="BASIC">
+                                <button type="submit" name="update_member" style="background-color: #e90a1f; border: none;">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-4 p-0">
+                <form action="../back-end/php/store-data.php" method="POST">
+                    <div class="d-flex align-items-center bg-primary text-white px-5" style="min-height: 300px;">
+                        <i class="flaticon-weightlifting display-3 text-secondary mr-3"></i>
+                        <div class="membership-container">
+                            <h3 class="text-white mb-3">Premium Membership</h3>
+                            <p>Access to gym facilities</p>
+                            <p>Access to group classes</p>
+                            <p>Price: ₱500/month</p>
+                            <div class="select-button">
+                                <input type="hidden" name="membershipPrice" value="₱500">
+                                <input type="hidden" name="membershipType" value="PREMUIM">
+                                <button  style="color: white; background-color: black; border: none;" type="submit" name="update_member">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-4 p-0">
+                <form action="../back-end/php/store-data.php" method="post">
+                    <div class="d-flex align-items-center bg-secondary text-white px-5" style="min-height: 300px;">
+                        <i class="flaticon-treadmill display-3 text-primary mr-3"></i>
+                            <div class="membership-container">
+                                <h3 class="text-white mb-3">Elite Membership</h3>
+                                <p>Access to gym facilities</p>
+                                <p>Access to group classes</p>
+                                <p>Access to personal trainer</p>
+                                <p>Price: ₱700/month</p>
+                                <div class="select-button">
+                                        <input type="hidden" name="membershipPrice" value="₱700">
+                                        <input type="hidden" name="membershipType" value="ELITE">
+                                        <button  type="submit" name="update_member" style="background-color: #e90a1f; border: none;">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries-->
+     <script src="../front-end/lib/jQuery/min.js"></script>   
+     <script src="../front-end/lib/bootsrtap/js/min.js"></script>
+    <!-- <script src="../front-end/lib/easing/easing.min.js"></script> -->
+    <!-- <script src="../front-end/lib/waypoints/waypoints.min.js"></script> -->
+
+    <!--Contact Javascript File-->
+    <!-- <script src="../front-end/mail/jqBootstrapValidation.min.js"></script> -->
+    <!-- <script src="../front-end/mail/contact.js"></script> -->
+
+    <!-- Template Javascript -->
+    <script src="../front-end/scripts/js/payment.js"></script>
+</body>
+
+</html>
